@@ -10,12 +10,6 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
-:root{
-    /* CSS HEX */
-    --light-blue-sky:#77e1ff;
-    --ghost-blue-sky:#bbf0fe;
-    --light-orange:#fed9b7;
-}
 body{
     background: #D3CCE3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #decdf5, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
@@ -34,13 +28,13 @@ nav{
     background-color: #f5f3f7;
 }
 nav .logo{
-    width: 20%;
+    width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 nav .logo img{
-    width: 70px;
+    width: 50px;
 }
 nav .name{
     width: 50%;
@@ -49,7 +43,7 @@ nav .name p{
     width: 100%;
     font-size: 1.5em;
     text-transform: capitalize;
-    text-align: center;
+    text-align: left;
     font-weight: 800;
 }
 .banner,.start-btn{
@@ -142,7 +136,7 @@ footer{
 footer a{
     font-weight: bold; 
 }
-@media screen and (min-width:600px){ 
+@media screen and (min-width:700px){ 
     .containers-task-div{
     width: 60%;
     }
@@ -153,7 +147,8 @@ footer a{
         width: 40%;
     }
     nav .name p{
-       font-size: 4vh;
+        width: 100%;
+       font-size: 3.4vh;
     }
     nav .logo{
         justify-content: right;
@@ -164,8 +159,17 @@ footer a{
     }
 }
 @media screen and (min-width:1500px){
+    nav .logo{
+        width: calc(100% / 2 - 10px);
+    }
     nav .logo img{
-        width: 40%;
+        width: 10%;
+    }
+    nav .name{
+        width: 60%;
+    }
+    nav .name p{
+        padding: auto 5px;
     }
     .containers-task-div{
         width: 50%;
